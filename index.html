@@ -558,7 +558,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#opportunities">استعراض الجهات</a>
-          <a class="btn btn-soft" href="#guide">كيف أحدث الموقع؟</a>
+          <a class="btn btn-soft" href="#guide">رسالة الايميل</a>
         </div>
       </div>
 
@@ -588,15 +588,10 @@
         <select id="typeFilter" aria-label="فلترة حسب النوع">
           <option value="all">كل الأنواع</option>
           <option value="تقنية">تقنية</option>
-          <option value="شبه حكومية">شبه حكومية</option>
+          <option value="حكومية">حكومية</option>
           <option value="صحية">صحية</option>
           <option value="ضيافة">ضيافة</option>
           <option value="تطوير واستثمار">تطوير واستثمار</option>
-        </select>
-        <select id="priorityFilter" aria-label="فلترة حسب الأولوية">
-          <option value="all">كل الأولويات</option>
-          <option value="high">أولوية عالية</option>
-          <option value="normal">أولوية عادية</option>
         </select>
       </div>
     </section>
@@ -610,7 +605,7 @@
     </div>
 
     <section class="cards" id="cardsContainer"></section>
-    <div class="empty" id="emptyState">ما فيه نتائج بنفس الفلتر الحالي.</div>
+    <div class="empty" id="emptyState">لا توجد نتائج للفلترة الحالية.</div>
 
     <section id="guide" class="guide">
       <div class="panel">
@@ -651,7 +646,6 @@
       {
         name: "رؤى المدينة القابضة",
         type: "تطوير واستثمار",
-        priority: "high",
         summary: "شركة كبيرة لمشاريع المدينة، مناسبة للتدريب في التحول الرقمي، الأنظمة، إدارة البيانات، وتقنية المعلومات.",
         email: "",
         phone: "920035525",
@@ -661,17 +655,15 @@
       {
         name: "وادي طيبة",
         type: "تقنية",
-        priority: "high",
         summary: "شركة تقنية وابتكار مرتبطة بجامعة طيبة، مناسبة للتدريب في الذكاء الاصطناعي، إنترنت الأشياء، والتحول الرقمي.",
         email: "info@taibahvalley.com.sa",
         phone: "014868888 تحويلة 1672",
-        website: "https://taibahvalley.com.sa/",
+        website: "https://script.google.com/macros/s/AKfycbwQIfoG0DedEkaPzL-hhW5ely8l71tVdqeS9xR-55nh0s9gwLAxI66JSae75_VV-vwKvQ/exec",
         location: "جامعة طيبة، المدينة المنورة"
       },
       {
         name: "Tahcom - تحكم للبرمجيات",
         type: "تقنية",
-        priority: "high",
         summary: "شركة تقنية مناسبة لمجالات البرمجيات، البيانات، الأمن السيبراني، إدارة المشاريع، والتحول الرقمي.",
         email: "careers@tahcom.com",
         phone: "0148420278",
@@ -681,7 +673,6 @@
       {
         name: "Saudi AVITO Information Technology",
         type: "تقنية",
-        priority: "high",
         summary: "شركة تقنية مرتبطة بحلول المطارات والأنظمة، مناسبة للدعم التقني، ERP، الشبكات، وتحليل الأنظمة.",
         email: "",
         phone: "",
@@ -691,7 +682,6 @@
       {
         name: "Medcom IT",
         type: "تقنية",
-        priority: "high",
         summary: "شركة تقنية محلية تقدم خدمات الشبكات، الصيانة، المواقع، الأنظمة، والحلول السحابية.",
         email: "info@medcom.it.com",
         phone: "0558008895",
@@ -701,7 +691,6 @@
       {
         name: "SIT - المصدر لتقنية المعلومات",
         type: "تقنية",
-        priority: "normal",
         summary: "شركة تقنية لها خدمات في البرمجيات، الشبكات، الأمن السيبراني، تطبيقات الجوال، والاستضافة.",
         email: "info@sitksa-eg.com",
         phone: "8004422221",
@@ -711,7 +700,6 @@
       {
         name: "GTW IT Solutions",
         type: "تقنية",
-        priority: "normal",
         summary: "شركة حلول تقنية مناسبة للتدريب في تطوير البرمجيات، البنية التحتية، إدارة التطبيقات، والتحول الرقمي.",
         email: "Support@gtwit.net",
         phone: "0543223853",
@@ -721,7 +709,6 @@
       {
         name: "Deep Dynamics",
         type: "تقنية",
-        priority: "normal",
         summary: "شركة ناشئة في الذكاء الاصطناعي والأتمتة والتحليلات، مناسبة لمن تهتم بمجالات AI وتحسين العمليات.",
         email: "connect@deepdynamics.sa",
         phone: "",
@@ -730,8 +717,7 @@
       },
       {
         name: "أمانة منطقة المدينة المنورة",
-        type: "شبه حكومية",
-        priority: "high",
+        type: "حكومية",
         summary: "جهة مناسبة للتدريب في الخدمات الرقمية، نظم البلاغات، الدعم التقني، والتحول الرقمي البلدي.",
         email: "tr-ma@amana-md.gov.sa",
         phone: "920011940",
@@ -740,8 +726,7 @@
       },
       {
         name: "هيئة تطوير منطقة المدينة المنورة",
-        type: "شبه حكومية",
-        priority: "high",
+        type: "حكومية",
         summary: "جهة تطويرية مناسبة لمجالات نظم المعلومات، البيانات، المبادرات الرقمية، وإدارة المشاريع.",
         email: "INFO@MDA.GOV.SA",
         phone: "0148177706",
@@ -750,8 +735,7 @@
       },
       {
         name: "غرفة المدينة المنورة",
-        type: "شبه حكومية",
-        priority: "normal",
+        type: "حكومية",
         summary: "جهة أعمال وتدريب تربطك بالقطاع الخاص، ومناسبة للتقديم على تدريب في الأنظمة والخدمات الإلكترونية.",
         email: "",
         phone: "920028910",
@@ -761,7 +745,6 @@
       {
         name: "Knowledge Economic City",
         type: "تطوير واستثمار",
-        priority: "normal",
         summary: "مدينة معرفية ومشروع استثماري، مناسبة للتدريب في الابتكار، تحليل الأعمال، وإدارة الأنظمة.",
         email: "info@madinahkec.com",
         phone: "920008484",
@@ -771,7 +754,6 @@
       {
         name: "Tibah Airports Operation",
         type: "تطوير واستثمار",
-        priority: "normal",
         summary: "شركة تشغيل مطار المدينة، مناسبة للتدريب في IT operations، الشبكات، الدعم الفني، وأنظمة التشغيل.",
         email: "",
         phone: "0148139999",
@@ -781,7 +763,6 @@
       {
         name: "مستشفى السعودي الألماني - المدينة",
         type: "صحية",
-        priority: "normal",
         summary: "بيئة صحية مناسبة للتدريب في أنظمة المستشفيات، الدعم التقني، قواعد البيانات، وتجربة المستخدم الرقمية.",
         email: "",
         phone: "920007997",
@@ -791,7 +772,6 @@
       {
         name: "مستشفى المواساة - المدينة",
         type: "صحية",
-        priority: "normal",
         summary: "مستشفى كبير يحتاج عادةً لأنظمة صحية، شبكات، دعم فني، وأمن معلومات.",
         email: "info@mouwasat.com",
         phone: "920004477",
@@ -801,7 +781,6 @@
       {
         name: "Maden Hotels",
         type: "ضيافة",
-        priority: "normal",
         summary: "مجموعة فنادق مناسبة للتدريب في أنظمة الحجز، الدعم التقني، الشبكات، وأنظمة التشغيل الفندقي.",
         email: "info@madenhotels.com",
         phone: "0148204444",
@@ -818,8 +797,8 @@
 
     function mailLink(company) {
       const to = company.email || "";
-      const subject = encodeURIComponent("طلب تدريب تعاوني – سحر إسماعيل – نظم معلومات");
-      const body = encodeURIComponent(`السلام عليكم ورحمة الله وبركاته،\n\nأنا سحر إسماعيل، طالبة نظم معلومات، وأبحث عن فرصة تدريب تعاوني في قسم تقنية المعلومات أو أي قسم مناسب لتخصصي لديكم.\n\nلدي اهتمام بتحليل الأنظمة، قواعد البيانات، تطوير التطبيقات، وتجربة المستخدم، واشتغلت في مشروع تخرج تقني باسم “رقيب” يجمع بين تطبيق جوال، إنترنت الأشياء، والذكاء الاصطناعي لدعم كبار السن.\n\nأرفقت لكم السيرة الذاتية وخطاب التدريب، ويسعدني أن تتاح لي فرصة التدريب لديكم واكتساب خبرة عملية ضمن فريقكم.\n\nشكرًا لوقتكم،\nسحر إسماعيل`);
+      const subject = encodeURIComponent("طلب تدريب تعاوني – نظم معلومات");
+      const body = encodeURIComponent(`السلام عليكم ورحمة الله وبركاته،\n\nأنا ، طالبة ، وأبحث عن فرصة تدريب تعاوني في قسم تقنية المعلومات أو أي قسم مناسب لتخصصي لديكم.\n\nلدي اهتمام ب .\n\nأرفقت لكم السيرة الذاتية وخطاب التدريب، ويسعدني أن تتاح لي فرصة التدريب لديكم واكتساب خبرة عملية ضمن فريقكم.\n\nشكرًا لوقتكم،\n`);
       return `mailto:${to}?subject=${subject}&body=${body}`;
     }
 
@@ -845,7 +824,7 @@
           <p class="desc">${company.summary}</p>
           <div class="meta">
             <div class="meta-row">📍 <span>${company.location || "غير محدد"}</span></div>
-            <div class="meta-row">✉️ <span>${company.email || "لا يوجد إيميل واضح - استخدمي الموقع أو LinkedIn"}</span></div>
+            <div class="meta-row">✉️ <span>${company.email || "لا يوجد إيميل واضح - استخدم الموقع أو LinkedIn"}</span></div>
             <div class="meta-row">☎️ <span>${company.phone || "غير متوفر"}</span></div>
           </div>
           <div class="card-actions">
